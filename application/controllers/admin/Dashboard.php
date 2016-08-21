@@ -25,8 +25,8 @@ class Dashboard extends Admin_Controller
 		$data['sidebar'] = array('base_url' => base_url('libs'),
 								 'nav_items' => $this->get_nav_items() );
 
-
-		var_dump(helper_function( current_url() ));
+		$a = helper_function( current_url() );
+		var_dump($a);
  		$this->parser->parse('admin/theme/header',$data);
 
 		$this->parser->parse('admin/theme/sidebar',$data['sidebar']);
