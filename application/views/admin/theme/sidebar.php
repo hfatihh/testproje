@@ -28,7 +28,7 @@
 
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
-									<?php $id_item = 'dashboard';?>
+									<?php $id_item = 'dashboard1';?>
 									<li class="<?php if ( trim($id_item) == trim($method_name) ) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
