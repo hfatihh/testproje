@@ -28,8 +28,8 @@
 
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
-									<?php $id_item = '{item_id}'; ?>
-									<li class="<?php if (strcmp($id_item,$id_item) == strcmp($method_name,$method_name)) {echo $id_item.'-active-'.$method_name;} else{echo 'else';}
+									<?php $id_item = '{item_id}'; strcmp($id_item,$id_item); strcmp($method_name,$method_name);?>
+									<li class="<?php if ( $id_item == $method_name ) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
