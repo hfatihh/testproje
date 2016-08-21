@@ -6,7 +6,7 @@
 							<i class="ti-align-justify"></i>
 						</a>
 						<a class="navbar-brand" href="#">
-							<img src="{base_url}/assets/images/logo.pnga" alt="Clip-Two"/>
+							<img src="{base_url}/assets/images/logo.png" alt="Clip-Two"/>
 						</a>
 						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 							<i class="ti-align-justify"></i>
