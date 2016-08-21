@@ -29,7 +29,7 @@
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
 									<?php $id_item = '{item_id}'; ?>
-									<li class="<?php ($id_item == $base_url) ? 'active' : '' ; ?> open">
+									<li class="<?php echo $id_item; ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
 												<div class="item-media">
