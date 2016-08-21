@@ -277,16 +277,7 @@ var Main = function() {
 		});
 		function switchLogo(theme) {
 			switch (theme) {
-				case "theme-2":
-				case "theme-3":
-				case "theme-5":
-				case "theme-6":
-					$(".navbar-brand img").attr("src", "assets/images/logo2.png");
-					break;
-
-				default:
-					$(".navbar-brand img").attr("src", "assets/images/logo.png");
-					break;
+			
 			};
 		};
 		function defaultSetting() {
