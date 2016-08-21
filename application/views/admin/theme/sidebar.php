@@ -33,7 +33,7 @@
 										var_dump($method_name);
 
 									?>
-									<li class="<?php if (strcmp($id_item) == strcmp($method_name)) {echo 'active';} else{echo 'else';}
+									<li class="<?php if (strcmp($id_item,$id_item) == strcmp($method_name,$method_name)) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
