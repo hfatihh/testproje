@@ -27,14 +27,10 @@
 						<ul class="main-navigation-menu">
 
 							<?php if ( isset($nav_items) ) : ?>
-								{nav_items}
-									<?php
-										$id_item1 = $item_id;
-										$id_item = strtoupper($id_item1);
-										$method_name1 = strtoupper($method_name);
-									?>
-									<li class="<?php if ( strcasecmp($id_item,$method_name1) == 0 ) {echo 'active';} else{echo 'else';}
-									 echo $id_item1.'"-"'.$id_item.'"-"'.$method_name1.'"';?> open">
+
+									<?php var_dump($nav_items); ?>
+								
+									<li class="open">
 										<a href="{item_link}">
 											<div class="item-content">
 												<div class="item-media">
@@ -46,7 +42,9 @@
 											</div>
 										</a>
 									</li>
-								{/nav_items}
+								
+									
+								
 							<?php endif; ?>
 
 
