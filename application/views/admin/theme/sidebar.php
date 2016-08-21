@@ -29,20 +29,20 @@
 							<?php if ( isset($nav_items) ) : ?>
 
 									<?php var_dump($nav_items); ?>
-								
-									<li class="open">
-										<a href="{item_link}">
+									<?php for($i=0;$i<count($nav_items);$i++){ ?>
+									<li class="<?php if ($nav_items[$i]['item_id'] == $method_name) {echo 'active';} ?> open">
+										<a href="<?php echo $nav_items[$i]['item_link']; ?>">
 											<div class="item-content">
 												<div class="item-media">
 													<i class="ti-home"></i>
 												</div>
 												<div class="item-inner">
-													<span class="title"> {item_text} </span>
+													<span class="title"> <?php echo $nav_items[$i]['item_text']; ?> </span>
 												</div>
 											</div>
 										</a>
 									</li>
-								
+									<?php } ?>
 									
 								
 							<?php endif; ?>
