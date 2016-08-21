@@ -28,7 +28,6 @@
 
 							<?php if ( isset($nav_items) ) : ?>
 
-									<?php var_dump($nav_items); ?>
 									<?php for($i=0;$i<count($nav_items);$i++){ ?>
 									<li class="<?php if ($nav_items[$i]['item_id'] == $method_name) {echo 'active';} ?> open">
 										<a href="<?php echo $nav_items[$i]['item_link']; ?>">
