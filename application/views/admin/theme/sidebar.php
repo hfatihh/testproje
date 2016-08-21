@@ -26,7 +26,7 @@
 						</div>
 						<ul class="main-navigation-menu">
 							<li class="active open">
-								<a href="index.html">
+								<a href="dashboard">
 									<div class="item-content">
 										<div class="item-media">
 											<i class="ti-home"></i>
