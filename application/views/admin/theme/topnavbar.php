@@ -6,7 +6,7 @@
 							<i class="ti-align-justify"></i>
 						</a>
 						<a class="navbar-brand" href="#">
-							<img src="assets/images/logo.png" alt="Clip-Two"/>
+							<img src="{base_url}/assets/images/logo.png" alt="Clip-Two"/>
 						</a>
 						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 							<i class="ti-align-justify"></i>
@@ -36,7 +36,7 @@
 													<a href="javascript:;" class="unread">
 														<div class="clearfix">
 															<div class="thread-image">
-																<img src="./assets/images/avatar-2.jpg" alt="">
+																<img src="{base_url}/assets/images/avatar-2.jpg" alt="">
 															</div>
 															<div class="thread-content">
 																<span class="author">Nicole Bell</span>
@@ -50,7 +50,7 @@
 													<a href="javascript:;" class="unread">
 														<div class="clearfix">
 															<div class="thread-image">
-																<img src="./assets/images/avatar-3.jpg" alt="">
+																<img src="{base_url}/assets/images/avatar-3.jpg" alt="">
 															</div>
 															<div class="thread-content">
 																<span class="author">Steven Thompson</span>
@@ -64,7 +64,7 @@
 													<a href="javascript:;">
 														<div class="clearfix">
 															<div class="thread-image">
-																<img src="./assets/images/avatar-5.jpg" alt="">
+																<img src="{base_url}/assets/images/avatar-5.jpg" alt="">
 															</div>
 															<div class="thread-content">
 																<span class="author">Kenneth Ross</span>
@@ -98,7 +98,7 @@
 										<div class="drop-down-wrapper ps-container">
 											<div class="list-group no-margin">
 												<a class="media list-group-item" href="">
-													<img class="img-circle" alt="..." src="assets/images/avatar-1.jpg">
+													<img class="img-circle" alt="..." src="{base_url}/assets/images/avatar-1.jpg">
 													<span class="media-body block no-margin"> Use awesome animate.css <small class="block text-grey">10 minutes ago</small> </span>
 												</a>
 												<a class="media list-group-item" href="">
@@ -142,7 +142,7 @@
 							<!-- start: USER OPTIONS DROPDOWN -->
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/avatar-1.jpg" alt="Peter"> <span class="username">Peter <i class="ti-angle-down"></i></i></span>
+									<img src="{base_url}/assets/images/avatar-1.jpg" alt="Peter"> <span class="username">Peter <i class="ti-angle-down"></i></i></span>
 								</a>
 								<ul class="dropdown-menu dropdown-dark">
 									<li>
