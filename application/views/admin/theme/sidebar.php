@@ -28,7 +28,11 @@
 
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
-									<?php $id_item = '{item_id}'; ?>
+									<?php $id_item = '{item_id}'; 
+										var_dump($id_item);
+										var_dump($method_name);
+										
+									?>
 									<li class="<?php echo '"'.$id_item.'"-"'.$method_name.'"'; if ($id_item == $method_name) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
