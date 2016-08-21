@@ -26,7 +26,7 @@ class Dashboard extends Admin_Controller
 								 'nav_items' => $this->get_nav_items() );
 
 		$a = $this->uri->segment(2);
-		echo $a;
+		echo $this->method;
  		$this->parser->parse('admin/theme/header',$data);
 
 		$this->parser->parse('admin/theme/sidebar',$data['sidebar']);
