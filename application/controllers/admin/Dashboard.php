@@ -29,7 +29,7 @@ class Dashboard extends Admin_Controller
 
  		$this->parser->parse('admin/theme/header',$data);
 
-		$this->load->view('admin/theme/sidebar',$data['sidebar']);
+		$this->parser->parse('admin/theme/sidebar',$data['sidebar']);
 		$this->load->view('admin/theme/topnavbar',$data);
 
 		$this->load->view('admin/theme/dashboardtitle');
