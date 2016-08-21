@@ -29,7 +29,7 @@
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
 									<li class="active open">
-										<a href="dashboard">
+										<a href="{item_link}">
 											<div class="item-content">
 												<div class="item-media">
 													<i class="ti-home"></i>
