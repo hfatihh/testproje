@@ -16,17 +16,15 @@ class Dashboard extends Admin_Controller
 		$data['logout'] = base_url('admin/login/logout');
 
 
-
 		$data['toastr_code'] = $this->session->flashdata('toastr_code');
 		$data['toastr_status'] = $this->session->flashdata('toastr_status');
 		$data['toastr_title'] = $this->session->flashdata('toastr_title');
 		$data['toastr_text'] = $this->session->flashdata('toastr_text');
 
 		$data['sidebar'] = array('base_url' => base_url('libs'),
+								 'method_name' => $this->method_name,
 								 'nav_items' => $this->get_nav_items() );
 
-		$a = $this->uri->segment(2);
-		echo $this->method;
  		$this->parser->parse('admin/theme/header',$data);
 
 		$this->parser->parse('admin/theme/sidebar',$data['sidebar']);

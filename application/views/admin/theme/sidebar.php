@@ -28,8 +28,8 @@
 
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
-									
-									<li class="open">
+									<?php $id_item = '{item_id}'; ?>
+									<li class="<?php $retVal = ($id_item == $base_url) ? 'active' : '' ; ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
 												<div class="item-media">

@@ -10,6 +10,6 @@ class Pages extends Admin_Controller {
  	
 	public function index()
 	{	
-		echo $this->method;;
+		echo $this->method_name;;
 	}
 }

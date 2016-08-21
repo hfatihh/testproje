@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller {
 
-	public $method;
+	public $method_name;
 
 	public function __construct ()
 	{
@@ -93,7 +93,7 @@ class Admin_Controller extends MY_Controller
 
 		$this->if_not_logged_in();
 		$this->load->model('nav_model');
-		$this->method = $this->uri->segment(2);
+		$this->method_name = $this->uri->segment(2);
 	}
 
 
