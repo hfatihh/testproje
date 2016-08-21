@@ -29,7 +29,7 @@
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
 									<?php $id_item = '{item_id}'; ?>
-									<li class="<?php echo $id_item; ?> open">
+									<li class="<?php echo $id_item.$method_name; ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
 												<div class="item-media">
