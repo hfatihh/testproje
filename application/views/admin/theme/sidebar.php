@@ -25,42 +25,30 @@
 							<span>Main Navigation</span>
 						</div>
 						<ul class="main-navigation-menu">
-							<li class="active open">
-								<a href="dashboard">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="ti-home"></i>
-										</div>
-										<div class="item-inner">
-											<span class="title"> Dashboard </span>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="ti-settings"></i>
-										</div>
-										<div class="item-inner">
-											<span class="title"> UI Elements </span><i class="icon-arrow"></i>
-										</div>
-									</div>
-								</a>
-								<ul class="sub-menu">
-									<li>
-										<a href="ui_elements.html">
-											<span class="title"> Elements </span>
+
+							<?php if ( isset($nav_items) ) : ?>
+
+									<?php for($i=0;$i<count($nav_items);$i++){ ?>
+									<li class="<?php if ($nav_items[$i]['item_id'] == $method_name) {echo 'active';} ?> open">
+										<a href="<?php echo $nav_items[$i]['item_link']; ?>">
+											<div class="item-content">
+												<div class="item-media">
+													<i class="ti-home"></i>
+												</div>
+												<div class="item-inner">
+													<span class="title"> <?php echo $nav_items[$i]['item_text']; ?> </span>
+												</div>
+											</div>
 										</a>
 									</li>
-									<li>
-										<a href="ui_buttons.html">
-											<span class="title"> Buttons </span>
-										</a>
-									</li>
-								</ul>
-							</li>
+									<?php } ?>
+									
+								
+							<?php endif; ?>
+
+
+
+
 						</ul>
 						<!-- end: MAIN NAVIGATION MENU -->
 						<!-- start: CORE FEATURES -->
