@@ -9,25 +9,12 @@ class Nav_model extends CI_Model
 		parent::__construct();
 	}
 
-	function is_user_exist_username($user_name)
-	{
-		$this->db->select('usrnm');
-		$this->db->where('usrnm', $user_name);
-		$query = $this->db->get('pnlusr');
-		
-		if($query->num_rows() > 0) {
-			return true;
-		} else {
-			return false;
-		}
 
-	}
-
-	function login_validation($user_name)
+	function get_nav_items($lang)
 	{
-		return $this->db->select('usrnm,psswrd')
-						  ->from('pnlusr')
-						  ->where('usrnm',$user_name)
+		return $this->db->select('item_id,item_text,item_link,item_lang,status')
+						  ->from('navigation')
+						  ->where('item_lang',$lang)
 						  ->get()
 					      ->result_array();
 
