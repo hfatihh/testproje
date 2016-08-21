@@ -29,7 +29,7 @@
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
 									<?php $id_item = '{item_id}';?>
-									<li class="<?php if ( trim($id_item) == trim($method_name) ) {echo 'active';} else{echo 'else';}
+									<li class="<?php if ( strcasecmp($id_item,$method_name) == 0 ) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
