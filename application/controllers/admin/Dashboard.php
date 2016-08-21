@@ -23,7 +23,7 @@ class Dashboard extends Admin_Controller
 		$data['toastr_text'] = $this->session->flashdata('toastr_text');
 
 		$data['sidebar'] = array('base_url' => base_url('libs'),
-								 'nav_items' );
+								 'nav_items' => $this->get_nav_items() );
 
 
 

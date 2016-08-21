@@ -90,9 +90,14 @@ class Admin_Controller extends MY_Controller
 		parent::__construct();
 
 		$this->if_not_logged_in();
+		$this->load->model('nav_model');
 	}
 
 
+	public function get_nav_items()
+	{
+		return $this->nav_model->get_nav_items($this->session->userdata('lang1'));
+	}
 	
 }
 
