@@ -28,7 +28,7 @@ class Dashboard extends Admin_Controller
  		$this->parser->parse('admin/theme/header',$data);
 
 		$this->parser->parse('admin/theme/sidebar',$data['sidebar']);
-		$this->load->view('admin/theme/topnavbar',$data);
+		$this->parser->parse('admin/theme/topnavbar',$data);
 
 		$this->load->view('admin/theme/dashboardtitle');
 		$this->load->view('admin/theme/featuredboxlinks');
