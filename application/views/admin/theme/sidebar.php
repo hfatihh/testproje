@@ -29,7 +29,7 @@
 							<?php if ( isset($nav_items) ) : ?>
 								{nav_items}
 									<?php
-										$id_item1 = '{item_id}';
+										$id_item1 = $item_id;
 										$id_item = strtoupper($id_item1);
 										$method_name1 = strtoupper($method_name);
 									?>
