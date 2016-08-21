@@ -13,8 +13,8 @@ class MY_Controller extends CI_Controller {
 	
 	public function langCheck ()
 	{	
-		$this->session->set_userdata('lang1','tr');
-		$this->session->set_userdata('lang2','turkish');
+		$this->session->set_userdata('lang1','en');
+		$this->session->set_userdata('lang2','english');
 
 		$lv_lang1 = $this->session->userdata('lang1');
 		$lv_lang2 = $this->session->userdata('lang2');
