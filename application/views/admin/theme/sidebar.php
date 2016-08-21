@@ -31,9 +31,9 @@
 									<?php $id_item = '{item_id}'; 
 										var_dump($id_item);
 										var_dump($method_name);
-										
+
 									?>
-									<li class="<?php echo '"'.$id_item.'"-"'.$method_name.'"'; if ($id_item == $method_name) {echo 'active';} else{echo 'else';}
+									<li class="<?php if (strcmp($id_item) == strcmp($method_name) {echo 'active';} else{echo 'else';}
 									 ?> open">
 										<a href="{item_link}">
 											<div class="item-content">
